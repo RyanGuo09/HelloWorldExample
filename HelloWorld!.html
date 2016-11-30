@@ -10,14 +10,14 @@
     <header>{{title}}</header>
 
     <div>
-        <input ng-model="name" ng-keyup="NameChange()" />
+        <input ng-model="name" ng-keyup="NameChange()" placeholder="Please enter you name " />
         <h1>{{greeting}}</h1>
     </div>
 
     <section>
         <form ng-submit="addDestination()">
-            City: <input name="city" type ="text" ng-model = "newDestination.city"/>
-            Country : <input name="country" type ="text" ng-model = "newDestination.country"/>
+            City: <input name="city" type ="text" ng-model = "newDestination.city" placeholder="Please enter your destination city" />
+            Country : <input name="country" type ="text" ng-model = "newDestination.country" placeholder="Please enter your destination country" />
             <input type="submit" value ="add"/>
         </form>
     </section>
